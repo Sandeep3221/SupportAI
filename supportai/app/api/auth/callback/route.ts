@@ -14,7 +14,7 @@ export async function GET(request:NextRequest) {
         response.cookies.set('sk_session', session.accessToken,{
                 httpOnly:true,
                 maxAge: 60 * 60 * 24 * 7, // 7 days
-                secure:false, // Set to true in production
+                secure:true, // Set to true in production
                 path:'/',
         })
         return response
