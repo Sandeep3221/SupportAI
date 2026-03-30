@@ -25,12 +25,10 @@
     const api_Url=`https://support-ai-orcin.vercel.app/api/chat`
     const scriptTag=document.currentScript;
     const ownerId=scriptTag.getAttribute("data-owner-id");
-    
     if(!ownerId){
         console.error("Owner ID not provided in data-owner-id attribute");
         return;
     }
-
     const button=document.createElement("div");
     button.className = "support-ai-btn";
     button.innerHTML="💬";
