@@ -8,7 +8,7 @@ function EmbedClient({ ownerId }: { ownerId: string }) {
   const [copied, setCopied] = useState(false);
   
   const embedCode = `<script 
-  src="${process.env.NEXT_PUBLIC_BASE_URL}/chatbot.js"
+  src="${process.env.NEXT_PUBLIC_BASE_URL}/chatBot.js"
   data-owner-id="${ownerId}"
 ></script>`
 
